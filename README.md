@@ -1,4 +1,4 @@
-# Coding Agent Context Docs Skills
+# Software Workflow Skill
 
 Turn an application idea into an agreed PRD, create its implementation plan, then prepare a project folder that coding agents can use to build and resume work.
 
@@ -9,7 +9,7 @@ Three focused skills have distinct responsibilities and can be installed indepen
 Install [Node.js](https://nodejs.org/) (including npm/npx) and [Git](https://git-scm.com/), then run:
 
 ```sh
-npx skills add kingsrv18/coding-agent-context-docs-skill
+npx skills add kingsrv18/software-workflow-skill
 ```
 
 Follow the prompts to choose skills, an agent, and project or global installation. The installer is the open-source [Skills CLI](https://github.com/vercel-labs/skills); its [supported agents](https://github.com/vercel-labs/skills#supported-agents) do not necessarily provide every tool needed by these workflows.
@@ -17,13 +17,13 @@ Follow the prompts to choose skills, an agent, and project or global installatio
 Install all three globally for Codex:
 
 ```sh
-npx skills add kingsrv18/coding-agent-context-docs-skill --skill prd-creation implementation-plan-workflow project-preparation --agent codex --global --yes
+npx skills add kingsrv18/software-workflow-skill --skill prd-creation implementation-plan-workflow project-preparation --agent codex --global --yes
 ```
 
 For the coordinated workflow, install the coordinator and all three stage skills together:
 
 ```sh
-npx skills add kingsrv18/coding-agent-context-docs-skill --skill software-workflow prd-creation implementation-plan-workflow project-preparation --agent codex --global --yes
+npx skills add kingsrv18/software-workflow-skill --skill software-workflow prd-creation implementation-plan-workflow project-preparation --agent codex --global --yes
 ```
 
 To install an individual skill, specify its name with `--skill`. Replace `--agent codex` with `claude-code`, `cursor`, or `github-copilot` as appropriate. Remove `--global` for project installation; use `--copy` if symbolic links are unavailable.
@@ -140,7 +140,7 @@ The skills do not install browser integrations, design-tool connections, or PDF 
 List available skills:
 
 ```sh
-npx skills add kingsrv18/coding-agent-context-docs-skill --list
+npx skills add kingsrv18/software-workflow-skill --list
 ```
 
 For example, update or remove a global installation:
