@@ -1,0 +1,9 @@
+# Skills installed locally from other repositories are development tools.
+.agents/skills/*
+!.agents/skills/prd-project-scaffold/
+skills-lock.json
+__pycache__/
+*.pyc
+.env
+.env.*
+node_modules/

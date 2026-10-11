@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD and Project Scaffold"
+  short_description: "Turn ideas and references into a PRD and coding context"
+  default_prompt: "Use $prd-project-scaffold to turn my typed idea, requirements document, reference URLs, or inspiration app open in the browser into an agreed PRD PDF and implementation-ready project folder."
