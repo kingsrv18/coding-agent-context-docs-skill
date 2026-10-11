@@ -1,6 +1,6 @@
 # Product-owner discovery
 
-Use this to understand the supplied inputs and resolve gaps or contradictions that materially change the PRD or scaffold. Ask only the questions that matter for this product. Bundle related questions and offer a recommendation with trade-offs when the owner asks for one or would benefit from one.
+Use this to understand the supplied inputs and resolve gaps or contradictions that materially change the PRD. Ask only the questions that matter for this product. Bundle related questions and offer a recommendation with trade-offs when the owner asks for one or would benefit from one.
 
 ## Starting inputs
 

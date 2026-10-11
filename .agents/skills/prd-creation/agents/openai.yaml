@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Creation"
+  short_description: "Clarify product requirements and create a reviewed PRD"
+  default_prompt: "Use $prd-creation to turn my idea, requirements document, reference URLs, or inspiration app into agreed product requirements, an editable PRD, and a reviewed PDF."

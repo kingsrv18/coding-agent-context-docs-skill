@@ -59,7 +59,7 @@ For a revision test, compare the candidate with the previous artifact, adopted w
 
 - Document control: title, version, date, owner, status, source inputs and decision state.
 - Executive summary: problem, target users/customers, product promise, measurable outcomes.
-- Release boundary: in scope, out of scope, later phases, assumptions and dependencies. State the complete first-release user outcome.
+- Release boundary: in scope, out of scope, later releases, assumptions and dependencies. State the complete first-release user outcome.
 - Personas and permissions: use the users and flows format above; include responsibility, record scope, sensitive-data visibility and approval boundaries.
 - Canonical vocabulary and domain model: entities, ownership, cardinality, lifecycle, historical integrity; distinguish business concepts from database tables.
 - User journeys: trigger, preconditions, normal path, exceptions/corrections, outputs, notifications and acceptance criteria for every critical flow. Specify applicable loading, empty, error, pending, success and permission states: what the user sees, what actions are available and how to recover. An empty state offers a next action, an error state explains recovery, and pending forms prevent accidental duplicate submission. For example, a pending export retains its job status across reloads; a failed export explains whether retry is safe. Check critical journeys for missing states, keyboard access and responsive behavior. Include state transitions and guards where relevant.
@@ -73,7 +73,7 @@ For a revision test, compare the candidate with the previous artifact, adopted w
 - Interfaces and integrations: contracts, trust boundaries, event ordering, retries/idempotency, recovery, human/provider setup and observability. Use the failure contracts below.
 - Security layers derived from a product-specific threat model: authentication, server-side authorization and object scope, tenant isolation where relevant, input/file handling, sensitive data, encryption/keys, audit, secrets, network/runtime controls, detection and recovery. Identify the owner and verification method for critical controls.
 - UI/experience system: navigation, critical screens/states, responsive/accessibility needs and design-source authority when relevant.
-- Implementation plan: dependency-ordered vertical slices, observable milestone outcomes and applicable checks, migration and rollout plan, pilot feedback, release gates and handoff. Use the context-package guidance to separate completed handoff verification from planned release evidence.
+- Release acceptance: observable product outcomes and applicable acceptance checks, migration/rollout constraints, pilot expectations, and release gates. Detailed implementation phases, slices, sequencing, and progress are authored separately after PRD agreement.
 - Risks, decisions and open questions: record consequential decisions as context, decision, alternatives and consequences beside their authoritative topic; separate files only when useful. For pending choices, include recommendation, owner, impact, deadline/trigger and mitigations.
 - Traceability: a reader can follow a high-risk requirement from source to flow, architecture control, test and release gate.
 
@@ -96,8 +96,8 @@ Before delivery, verify all of the following against the source and rendered PDF
 - Sections 4 and 5 and their required subsections exist with substantive product-specific tables, rationale, request walkthrough and boundary rules. The architecture diagram is present, legible and consistent with scope, stack and prose; its editable source exists.
 - The editorial review passes: major sections explain behavior, reasons and consequences, unfamiliar terms are defined, and a reader can understand the product without consulting appendices or project context files.
 
-The package checker validates file references and PDF presence; it does not prove flow completeness, architectural correctness or writing quality. Perform the content review separately and repair omissions before delivery.
+Check artifact references and PDF presence as well as content. File checks do not prove flow completeness, architectural correctness or writing quality; perform the content review separately and repair omissions before delivery.
 
 Check the PRD against these failure modes: a stack copied from a reference project or beyond the team's maintenance capacity; a feature list with no end-to-end flow; permissions without server enforcement or record scope; a happy path without recovery; security adjectives without enforceable controls; duplicate events that repeat effects; billing changes without access behavior; unbounded paid workloads; a roadmap without observable acceptance checks; contradictory terminology or states; specific legal claims without verified basis; and open decisions hidden as settled facts.
 
-Prefer tables for scope, permission matrices, decisions, risks, milestones and release gates when they improve comparison. Make the PDF readable as a standalone artifact with usable headings, page numbers and legible tables. Preserve an editable source for later revision.
+Prefer tables for scope, permission matrices, decisions, risks, acceptance criteria and release gates when they improve comparison. Make the PDF readable as a standalone artifact with usable headings, page numbers and legible tables. Preserve an editable source for later revision.

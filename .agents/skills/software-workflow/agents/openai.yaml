@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software Workflow"
+  short_description: "Run PRD, implementation planning, and preparation in order"
+  default_prompt: "Use $software-workflow to take my application idea through PRD creation, implementation planning, and project preparation in order, preserving required clarifications and review gates."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implementation Plan and Workflow"
+  short_description: "Plan phased slices and guide builds through user previews"
+  default_prompt: "Use $implementation-plan-workflow to turn my agreed PRD and available specs or designs into a phased implementation plan with preparation tasks, actionable slices, and user preview approval checkpoints."

@@ -1,10 +1,10 @@
 # Product-shaped context package
 
-Create a real folder whose documents answer the questions a coding agent will face for **this** application. The supplied reference folders illustrate different product needs; neither is a file checklist. Choose the documentation map after discovery and include it in the owner decision brief.
+Create a real folder whose documents answer the questions a coding agent will face for **this** application. Read the agreed PRD and implementation plan before choosing the documentation map. The supplied reference folders illustrate different product needs; neither is a file checklist. Explain the map as part of preparation, preserving prior decisions.
 
 ## Stable handoff
 
-The package contains a navigable `README.md`, a concise task-routed `AGENTS.md`, an editable canonical PRD source, the reviewed PRD PDF, and enough populated context docs to implement the agreed first release. File names and category folders beyond that follow the product. A separate document earns its place when it has a distinct authority, reader, update cadence, risk boundary, or task trigger. Otherwise keep the content with its nearest authoritative topic.
+The package contains a navigable `README.md`, a concise task-routed `AGENTS.md`, the existing editable canonical PRD source and reviewed PDF, the existing implementation plan, a populated design-and-build workflow spec, and enough context docs to implement the agreed first release. Preserve source authority when bringing existing artifacts into the folder. File names and category folders beyond that follow the product. A separate document earns its place when it has a distinct authority, reader, update cadence, risk boundary, or task trigger. Otherwise keep the content with its nearest authoritative topic. Reference the plan rather than creating a separate phase/task-summary context document.
 
 For each proposed file, answer:
 
@@ -28,12 +28,13 @@ Remove a proposed file when these answers are weak. Add a file when a single doc
 | Large or designed UI | Shared interaction rules, navigation, screen states, design-source authority and accessibility. |
 | Several deployable parts or demanding operations | Runtime topology, environments, secrets, observability, backup/recovery and deployment plan. |
 | Long-lived modular codebase | Module ownership, codebase map, engineering memory and maintenance rules. |
+| Agentic development with user review gates | Build-workflow spec, design/preview inputs, checkpoint approval and resume rules; see [build-workflow-handoff.md](build-workflow-handoff.md). |
 
 These are prompts for selection, not automatic files. A small application may cover several rows in one architecture note. A larger product may split one row across modules or workflows. Preserve the user's current design and delivery workflow; no screen catalogue is required by this package.
 
 ## Agent navigation
 
-`AGENTS.md` should point to the **documents actually created** by task trigger: product behavior, interface, domain/API, data, access/security, integration, testing or release as applicable. State source precedence and how to raise an unresolved contradiction. Keep it short enough that an agent can find the relevant source quickly. Do not duplicate the PRD or cache facts visible in configuration.
+`AGENTS.md` should point to the **actual authoritative documents** by task trigger: product behavior, interface, domain/API, data, access/security, integration, testing or release as applicable. Route build, verification, review, and resumption to both the implementation plan and design-and-build workflow spec. State source precedence and how to raise an unresolved contradiction. Keep it short enough that an agent can find the relevant source quickly. Do not duplicate the PRD or cache facts visible in configuration.
 
 The `README.md` should show what exists now, the chosen folder tree, how to start work, and where to find the PRD and context docs. Links must resolve. Keep an open-decision register when material choices remain; it may live in the PRD or in a separate file. Keep requirement sources and owner clarifications traceable; a separate source register is useful when the input set is large or conflicting.
 
@@ -59,9 +60,9 @@ The audit flags eligible files of at least 50 MiB by default (`--large-mib` adju
 
 Include local size, Git-eligible size, largest disk consumers, ignore coverage and repository status in the handoff. Explain retained local bulk and any unresolved flags. A documentation-only handoff still gets the audit, with initialization steps stated explicitly.
 
-### Milestones, tests and release evidence
+### Acceptance checks, tests and release evidence
 
-Define completion by observable behavior and applicable checks: for example, an authorized user creates and retrieves a record while another tenant is denied, rather than merely creating an endpoint file. Identify business-logic, persistence/integration and end-to-end checks from the risks; cover critical journeys without imposing a universal coverage percentage or testing tool. Include integration tests at real boundaries where those boundaries determine correctness. Review whether a broken behavior would fail a test and whether mocks bypass the rule being tested. When changing tests, explain the requirement or defect that justifies the change and preserve intended behavior unless the owner has changed it.
+Use the PRD's acceptance criteria and the existing plan's completion checks: for example, an authorized user creates and retrieves a record while another tenant is denied, rather than merely creating an endpoint file. Prepare the procedure for following that plan using [build-workflow-handoff.md](build-workflow-handoff.md). Context specs may clarify product-specific verification contracts; phases and task sequencing remain in the plan. Identify business-logic, persistence/integration and end-to-end checks from the risks; cover critical journeys without imposing a universal coverage percentage or testing tool. Include integration tests at real boundaries where those boundaries determine correctness. Review whether a broken behavior would fail a test and whether mocks bypass the rule being tested. When changing tests, explain the requirement or defect that justifies the change and preserve intended behavior unless the owner has changed it.
 
 Record checks performed and their results separately from checks planned for implementation or release. Disclose failures, skips, mocks, stubs, assumptions and external setup so another agent can assess what the evidence supports. Specify applicable automated checks that gate merges or deployments and how migration failures affect rollout. Backup restores, rollback exercises, an error reaching its tracker, alert delivery and expected-load tests remain planned until actually performed; for applicable release gates, identify an owner, environment, procedure and pass criterion. A written recovery procedure or configured alert is not evidence that recovery or delivery worked. Performance changes should have before/after measurements when their benefit is claimed.
 

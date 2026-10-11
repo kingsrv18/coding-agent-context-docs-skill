@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Preparation"
+  short_description: "Create context, workflow guidance, and a verified starter"
+  default_prompt: "Use $project-preparation to turn my agreed PRD and implementation plan into populated context docs, a design-and-build workflow spec, and a verified project scaffold."
