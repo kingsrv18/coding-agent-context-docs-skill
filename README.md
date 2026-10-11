@@ -54,6 +54,8 @@ The plan includes small slices with inputs, actions, outputs, dependencies, and 
 
 For new projects, preparation precedes feature implementation. The plan owns live status, verification evidence, feedback, approval history, blockers, and resume information. During an authorized build, this skill follows and maintains the plan using the prepared workflow spec.
 
+Plans assess applicable work through market/commercial launch: staging and production configuration, backup and restore verification, error tracking, uptime monitoring, product analytics, privacy/data policies and compliance documents, customer/commercial readiness, and launch checks. Non-feature tasks have owners, dependencies, outputs, and completion evidence. Railway/Vercel, Sentry, UptimeRobot, and PostHog are examples rather than required providers. Prototype or pilot plans distinguish later launch dependencies from their agreed endpoint.
+
 ### Project preparation
 
 Use the agreed PRD and implementation plan to choose product-specific context docs and create an executable starter, or a documentation-only handoff when explicitly chosen. Preserve accepted decisions and existing code. Verify startup within the available boundaries and report configuration/provider setup still needed.
@@ -164,6 +166,7 @@ Use the relevant skill name for the other skills. For project installations, run
   SKILL.md
   agents/openai.yaml
   references/plan-contract.md   Slices, checkpoints, and progress
+  references/launch-readiness.md  Environments, operations, documents, launch
 .agents/skills/project-preparation/
   SKILL.md
   agents/openai.yaml

@@ -18,7 +18,7 @@ Locate the three focused skills by name in the available skill catalog, or use t
 | Order | Skill to read and follow | Inputs and completion boundary |
 | --- | --- | --- |
 | 1 | [prd-creation](../prd-creation/SKILL.md) | Start with the idea and supplied references. Complete discovery and owner decision confirmation, then create and visually review the editable PRD, PDF, and architecture artifacts. |
-| 2 | [implementation-plan-workflow](../implementation-plan-workflow/SKILL.md) | Use the agreed canonical PRD and available specs/designs. Run its planning steps, producing phases, slices, dependencies, preparation work, checkpoints, and readiness/blockers. A scaffold is not required. |
+| 2 | [implementation-plan-workflow](../implementation-plan-workflow/SKILL.md) | Use the agreed canonical PRD and available specs/designs. Run its planning steps, producing phases, slices, dependencies, preparation work, applicable environment/operations/document/launch work, checkpoints, and readiness/blockers. A scaffold is not required. |
 | 3 | [project-preparation](../project-preparation/SKILL.md) | Use that PRD and plan to create context docs, the design-and-build workflow spec, project navigation, and starter. Complete package checks, startup verification within stated limits, and disk/Git audit; record preparation evidence in the existing plan. |
 
 Use one agreed output/project location through the stages. Carry real source paths and decision status forward; preserve canonical authority if preparation relocates artifacts. Present a short stage transition with completed outputs and the next outcome. A focused skill's stage-only handoff marks that stage complete; when the user requested the full workflow, continue to the next authorized stage.

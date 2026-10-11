@@ -1,6 +1,6 @@
 ---
 name: implementation-plan-workflow
-description: Turn an agreed PRD and available specs, design references, or code into a phased implementation plan with small slices and user preview approval checkpoints. Use immediately after PRD agreement or to follow and maintain the plan during a build; not for initial PRD creation or project preparation.
+description: Turn an agreed PRD and available specs, designs, or code into phased slices covering features, environments, operations, required documents, and applicable commercial launch, with user review checkpoints. Use after PRD agreement or to maintain the plan during a build; not for PRD creation or project preparation.
 ---
 
 # Implementation plan and workflow
@@ -17,11 +17,13 @@ Completion: the plan's source documents and current implementation are identifie
 
 ## 2. Write phases and executable slices
 
-Read [plan-contract.md](references/plan-contract.md) before creating or revising the implementation plan. Reuse an existing authoritative plan or create `docs/implementation-plan.md`, adapting to the project's layout. For a PRD-only start, create the plan in the agreed document location and mark future source/configuration paths as proposed. Update existing indexes when available; project preparation creates the full README and task-routed AGENTS.md later. Link only actual files.
+Read [plan-contract.md](references/plan-contract.md) and [launch-readiness.md](references/launch-readiness.md) before creating or revising the implementation plan. Reuse an existing authoritative plan or create `docs/implementation-plan.md`, adapting to the project's layout. For a PRD-only start, create the plan in the agreed document location and mark future source/configuration paths as proposed. Update existing indexes when available; project preparation creates the full README and task-routed AGENTS.md later. Link only actual files.
 
 Include project preparation as prerequisite work before feature implementation when context docs, workflow guidance, or a starter are missing. Specify its outputs: populated product-specific context docs, `docs/build-workflow.md` or an equivalent workflow spec, agent/index navigation, and a verified starter or explicitly chosen documentation-only handoff. `project-preparation` or equivalent preparation creates these outputs from the PRD and plan; this planning step does not create the workflow spec or scaffold. Record design sources/access and later input tasks without requiring all designs before planning.
 
 Plan all agreed release work, including enabling tasks and applicable release checks. Keep the phase overview readable and each executable slice specific about inputs, actions, outputs, dependencies, and completion evidence. Later blocked slices may name unresolved inputs; resolve them before execution. Assign stable phase, slice, subslice, and checkpoint identifiers. Split a task when its instructions or completion boundary become ambiguous.
+
+Cover applicable work through market/commercial launch, including staging/production setup, backup and demonstrated restore, error tracking, uptime monitoring, product analytics, privacy/data policies and compliance-document drafting/review/publication, customer/commercial readiness, and launch operations. Use the launch-readiness assessment to identify necessary additional work. Give setup/document tasks owners, environment/access dependencies, concrete outputs, and verification or review gates. Preserve the agreed endpoint for prototypes/pilots and label later launch work; tool examples are not mandatory supplier choices.
 
 Make each UI flow visible by name in the plan. Identify the design input and how the agent will access it; pair UI work with its corresponding backend and integration work, as subslices or explicit dependent slices. Schedule a user preview checkpoint at every completed UI flow or module. Define what the user will try, mock fixtures, navigation, relevant states and edge cases, and the explicit approval gate.
 

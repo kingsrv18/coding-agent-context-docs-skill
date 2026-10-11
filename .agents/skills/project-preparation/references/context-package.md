@@ -27,10 +27,13 @@ Remove a proposed file when these answers are weak. Add a file when a single doc
 | Important reports or exports | Data provenance, calculation grain, snapshots, permissions, reconciliation and acceptance fixtures. |
 | Large or designed UI | Shared interaction rules, navigation, screen states, design-source authority and accessibility. |
 | Several deployable parts or demanding operations | Runtime topology, environments, secrets, observability, backup/recovery and deployment plan. |
+| Public or commercial launch | Staging/production setup, recovery and incident runbooks, monitoring/analytics contracts, privacy/data-policy and compliance-document sources, customer/support guidance and launch readiness as applicable. |
 | Long-lived modular codebase | Module ownership, codebase map, engineering memory and maintenance rules. |
 | Agentic development with user review gates | Build-workflow spec, design/preview inputs, checkpoint approval and resume rules; see [build-workflow-handoff.md](build-workflow-handoff.md). |
 
 These are prompts for selection, not automatic files. A small application may cover several rows in one architecture note. A larger product may split one row across modules or workflows. Preserve the user's current design and delivery workflow; no screen catalogue is required by this package.
+
+Use the plan's environment, operational, policy/document, and launch slices to seed the relevant context authorities. Record provider/environment choices, safe configuration names, document ownership and review needs, and which real setup or evidence remains for later slices. An internal context note is not a published privacy policy, and scaffold verification does not establish production or commercial-launch readiness. Keep launch tasks and status in the implementation plan.
 
 ## Agent navigation
 

@@ -6,6 +6,8 @@ The implementation plan tells the agent what to do next and owns live progress. 
 
 Start with the release goal, authoritative source links, current implementation baseline and verified limits, followed by a phase/slice overview. Show stable IDs, outcomes, dependencies, status, and checkpoints in a compact table or equivalent navigable structure. Include a flow/module-to-slice-and-checkpoint mapping so UI delivery and module reviews are visible without reading every task. Identify applicable release work such as integration verification, migration or deployment readiness from the actual product risks.
 
+State the release endpoint (prototype, pilot, public release, or commercial launch) and assess environment, operations, required-document, and launch coverage using [launch-readiness.md](launch-readiness.md). Represent applicable setup, drafting, review, and launch work as executable slices, with owners and evidence, rather than ending the plan at feature completion.
+
 Each phase names its outcome and exit conditions. Each executable slice contains:
 
 | Field | Required substance |
@@ -65,4 +67,4 @@ For inaccessible designs, identify the missing source and ask for accessible mat
 
 ## Plan validation before handoff
 
-Check requirement coverage, named UI-flow coverage, module checkpoints, unique IDs, resolving existing document/ID references, dependency order without cycles, approved-gate placement, concrete completion evidence, and honest baseline/progress claims. For a PRD-only start, verify that preparation precedes feature work and future files are named outputs rather than broken links. Walk through the next slice using its available sources to confirm another agent can execute it. Once preparation exists, verify that project agent instructions route build/resume work to both workflow and plan documents. Report blockers rather than claiming every slice is ready.
+Check requirement coverage, named UI-flow coverage, module checkpoints, unique IDs, resolving existing document/ID references, dependency order without cycles, approved-gate placement, concrete completion evidence, and honest baseline/progress claims. Check the launch-readiness categories for applicable work, justified exclusions or accepted deferrals, environment/access ownership, document review/publication dependencies, and real recovery/monitoring evidence. For a PRD-only start, verify that preparation precedes feature work and future files are named outputs rather than broken links. Walk through the next slice using its available sources to confirm another agent can execute it. Once preparation exists, verify that project agent instructions route build/resume work to both workflow and plan documents. Report blockers rather than claiming every slice is ready.
